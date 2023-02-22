@@ -5,14 +5,14 @@ namespace ProiectMobil;
 
 public partial class App : Application
 {
-    static ShoppingListDatabase database; 
-	public static ShoppingListDatabase Database 
+    static ClujFlyDatabase database; 
+	public static ClujFlyDatabase Database 
 	{ 
 		get 
 		{ 
 			if (database == null) 
 			{ 
-				database = new ShoppingListDatabase(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "ShoppingList.db3")); 
+				database = new ClujFlyDatabase(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "ClujFly.db3")); 
 			} return database; 
 		} 
 	}

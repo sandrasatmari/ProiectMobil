@@ -8,20 +8,20 @@ using SQLiteNetExtensions.Attributes;
 
 namespace ProiectMobil.Models
 {
-    public class Shop
+    public class Cazare
     {
         [PrimaryKey, AutoIncrement]
         public int ID { get; set; }
-        public string ShopName { get; set; }
+        public string CazareName { get; set; }
         public string Adress { get; set; }
-        public string ShopDetails
+        public string CazareDetails
         {
             get
             {
-                return ShopName + " " + Adress;
+                return CazareName + " " + Adress;
             }
         }
         [OneToMany]
-        public List<ShopList> ShopLists { get; set; }
+        public List<CountryList> CountryLists { get; set; }
     }
 }

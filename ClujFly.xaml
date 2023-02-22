@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProiectMobil.ClujFly"
+             Title="ClujFly">
+    <VerticalStackLayout Spacing="10" Margin="10">
+        <HorizontalStackLayout Spacing="10">
+            <Image Source="earth.png"
+                   SemanticProperties.Description="ClujFly"
+                   HeightRequest="64" />
+            <Label FontSize="22" FontAttributes="Bold" Text="ClujFly" VerticalOptions="End" />
+            
+           
+        </HorizontalStackLayout>
+        <Label Text="ClujFly este aplicația care va ajuta sa va organizați călătoriile viitoare, sa va alegeți cazarea pentru fiecare destinație și sa vi le adăugați la un Wishlist!" />
+    </VerticalStackLayout>
+</ContentPage>

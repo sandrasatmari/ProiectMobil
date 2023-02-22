@@ -2,17 +2,16 @@
 <ContentPage xmlns:local="clr-namespace:ProiectMobil"
              xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="ProiectMobil.ListPage"
-             Title="ListPage">
+             x:Class="ProiectMobil.DestinatiePage"
+             Title="DestinatiePage">
     <StackLayout Margin="20">
-        <Editor Placeholder="Enter the description of the shopping list"
+        <Editor Placeholder="Introduceti destinatia dorita"
                 Text="{Binding Description}"
                 HeightRequest="50" >
             <Editor.Behaviors>
                 <local:ValidationBehaviour />
             </Editor.Behaviors>
         </Editor>
-        <Picker x:Name="ShopPicker" Title="Enter Shop Name"/>
         <Grid>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*" />
@@ -32,7 +31,7 @@
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
-        <Button Text="Add/Choose Item to buy" MaximumWidthRequest="300"
+        <Button Text="Continua cu orasul dorit" MaximumWidthRequest="300"
 Clicked="OnChooseButtonClicked"/>
     </StackLayout>
 </ContentPage>

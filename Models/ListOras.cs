@@ -1,5 +1,4 @@
-﻿using SQLite;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,15 +8,12 @@ using SQLiteNetExtensions.Attributes;
 
 namespace ProiectMobil.Models
 {
-    public class ShopList
+    public class ListOras
     {
         [PrimaryKey, AutoIncrement]
         public int ID { get; set; }
-        [MaxLength(250), Unique]
-        public string Description { get; set; }
-        public DateTime Date { get; set; }
-
-        [ForeignKey(typeof(Shop))]
-        public int ShopID { get; set; }
+        [ForeignKey(typeof(CountryList))]
+        public int CountryListID { get; set; }
+        public int OrasID { get; set; }
     }
 }

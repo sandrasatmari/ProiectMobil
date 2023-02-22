@@ -56,22 +56,43 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiXaml Update="AboutPage.xaml">
+	  <Compile Update="ClujFly.xaml.cs">
+	    <DependentUpon>ClujFly.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="Destinatii.xaml.cs">
+	    <DependentUpon>Destinatii.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="DestinatiePage.xaml.cs">
+	    <DependentUpon>DestinatiePage.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="Orase.xaml.cs">
+	    <DependentUpon>Orase.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="Cazari.xaml.cs">
+	    <DependentUpon>Cazari.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="CazarePage.xaml.cs">
+	    <DependentUpon>CazarePage.xaml</DependentUpon>
+	  </Compile>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiXaml Update="ClujFly.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="ListEntryPage.xaml">
+	  <MauiXaml Update="Destinatii.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="ListPage.xaml">
+	  <MauiXaml Update="DestinatiePage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="ProductPage.xaml">
+	  <MauiXaml Update="Orase.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="ShopEntryPage.xaml">
+	  <MauiXaml Update="Cazari.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="ShopPage.xaml">
+	  <MauiXaml Update="CazarePage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>

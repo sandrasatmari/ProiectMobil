@@ -3,37 +3,37 @@ using ProiectMobil.Models;
 
 namespace ProiectMobil;
 
-public partial class ShopPage : ContentPage
+public partial class CazarePage : ContentPage
 {
-	public ShopPage()
+	public CazarePage()
 	{
 		InitializeComponent();
 	}
 
     async void OnSaveButtonClicked(object sender, EventArgs e)
     {
-        var shop = (Shop)BindingContext;
-        await App.Database.SaveShopAsync(shop);
+        var cazare = (Cazare)BindingContext;
+        await App.Database.SaveCazareAsync(cazare);
         await Navigation.PopAsync();
     }
     async void OnDeleteButtonClicked(object sender, EventArgs e)
     {
-        var shop = (Shop)BindingContext;
-        await App.Database.DeleteShopAsync(shop);
+        var cazare = (Cazare)BindingContext;
+        await App.Database.DeleteCazareAsync(cazare);
         await Navigation.PopAsync();
     }
 
     async void OnShowMapButtonClicked(object sender, EventArgs e)
     {
-        var shop = (Shop)BindingContext;
-        var address = shop.Adress;
+        var cazare = (Cazare)BindingContext;
+        var address = cazare.Adress;
         var locations = await Geocoding.GetLocationsAsync(address);
         var options = new MapLaunchOptions
         {
-            Name = "Magazinul meu preferat" };
+            Name = "Cazarea mea preferata" };
         var location = locations?.FirstOrDefault();
         //var myLocation = await Geolocation.GetLocationAsync();
-        var myLocation = new Location(46.7731796289, 23.6213886738);
+        var myLocation = new Location(41.90828171283743, 12.568616889040975);
         var distance = myLocation.CalculateDistance(location, DistanceUnits.Kilometers);
         if (distance < 4)
         {
